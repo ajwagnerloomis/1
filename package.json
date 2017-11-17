@@ -8,8 +8,7 @@
     "build": "echo \"Build here\"",
     "cleanup": "echo \"clean up\"",
     "preversion": "npm test",
-    "version": "npm run build",
-    "postversion": "npm run cleanup && git push && git push --tags"
+    "version": "npm run build"
   },
   "repository": {
     "type": "git",

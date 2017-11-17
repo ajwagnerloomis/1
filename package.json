@@ -9,7 +9,7 @@
     "cleanup": "echo \"clean up\"",
     "preversion": "npm test",
     "version": "npm run build",
-    "postversion": "npm run cleanup"
+    "postversion": "npm run cleanup && git push && git push --tags"
   },
   "repository": {
     "type": "git",

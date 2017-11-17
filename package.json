@@ -1,14 +1,15 @@
 {
   "name": "test1",
-  "version": "0.2.0",
+  "version": "0.1.2",
   "description": "This is a test repo, man... ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "build": "echo \"Build here\"",
+    "cleanup": "echo \"clean up\"",
     "preversion": "npm test",
-    "version": "npm run build && git add -A && git checkout master && git merge develop --no-ff",
-    "postversion": "git push && git push --tags"
+    "version": "npm run build",
+    "postversion": "npm run cleanup && git push && git push --tags"
   },
   "repository": {
     "type": "git",

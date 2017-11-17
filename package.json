@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\"",
     "build": "echo \"Build here\"",
     "preversion": "npm test",
-    "version": "npm run build && git add -A dist",
-    "postversion": "git push && git push --tags && rm -rf build/temp"
+    "version": "npm run build",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
